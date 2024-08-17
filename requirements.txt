@@ -1,0 +1,5 @@
+mysqlclient
+mysql-connector-python
+django
+
+# Start project cmd line after installing django------------ django-admin.py startproject projectX ----------Go to projectX and create the app ----------python manage.py startapp appX
