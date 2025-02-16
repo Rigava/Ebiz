@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus - AI powered Safety</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-nav .nav-link {
+            margin-right: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+        .dropdown-menu .dropdown-item {
+            transition: background-color 0.3s ease-in-out;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #E0F2F1;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f9f9f9;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2d2d2d;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .btn-primary {
+            background-color: #007b5e;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .btn-secondary {
+            background-color: #f04d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .trustpilot {
+            margin-top: 20px;
+        }
+        .rating {
+            color: #1dbf73;
+            font-weight: bold;
+        }
+        .info-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+        .info-card {
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Focus</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">Solutions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">🔬 Create Risk Assessment Analysis</a></li>
+                            <li><a class="dropdown-item" href="#">📊 Create Incident Analysis</a></li>
+                            <li><a class="dropdown-item" href="#">📜 Chat with Focus AI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">E Commerce</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Guide</a></li>
+                            <li><a class="dropdown-item" href="#">Knowledge Base</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'admin_login' %}">Sign In</a></li>
+                    <li class="nav-item"><a class="btn btn-secondary nav-link text-white" href="{% url 'admin_login' %}">Get Started for Free</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <h1>Get Your <span style="color: #007b5e;">Risk</span> Assessment Online</h1>
+        <p>Effortlessly understand the safety work with Focus AI powered.</p>
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary me-3">Start Your Free Analysis</a>
+            <a href="#" class="btn btn-outline-secondary">Shop Safety Devices</a>
+        </div>
+        <div class="trustpilot mt-4">
+            <span class="rating">Excellent</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Trustpilot_Stars.png" alt="Trustpilot Rating" height="20">
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Make Informed Safety Decisions</h2>
+        <p>We have all you need to better understand your safety and make informed and accurate decisions about your work.</p>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <h4>AI Risk Assessment</h4>
+                        <p>Customize your personal AI Risk Analyser. Get tailored insights, discover your activity risks, and generate risk assessment.</p>
+                        <a href="#" class="text-success">GO TO RISK ANALYZER →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <h4>Incident Management</h4>
+                        <p>Upload your incident for creation of incident corrective & preventive action and detailed reports.</p>
+                        <a href="#" class="text-success">GO TO INCIDENT ANALYZER →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <h4>Find Safety Regulation </h4>
+                        <p>Connect with latest regulation insights.</p>
+                        <a href="#" class="text-success">CHAT WITH FOCUS AI →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

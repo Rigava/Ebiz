@@ -8,7 +8,7 @@ from ebizApp.models import Categories, SubCategories,Products,ProductMedia
 from django.db.models import Q
 # Create your views here.
 def demoPage(request):
-    return render(request,"demo.html")
+    return render(request,"shop.html")
 
 def adminSignin(request):
     return render(request,"admin_templates/signin.html")
