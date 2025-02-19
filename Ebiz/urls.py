@@ -23,6 +23,7 @@ from Ebiz import settings
 urlpatterns = [
     # path('admin_old/', admin.site.urls),
     path('', views.demoPage),
+    path('marineHome', views.demoPage1,name="marine_home"),
     path('admin/', views.adminSignin,name="admin_login"),
     path('adminLogin', views.adminLoginProcess, name = "admin_login_process"),
     path('adminLogout', views.adminLogoutProcess, name = "admin_logout_process"),

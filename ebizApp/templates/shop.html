@@ -67,6 +67,14 @@
             background: #f8f9fa;
             text-align: left;
         }
+        .testimonial-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .faq-section {
+            padding: 50px 20px;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +95,7 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">E Commerce</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'marine_home' %}">E Commerce</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
                         <ul class="dropdown-menu">
@@ -106,8 +114,8 @@
         <h1>Get Your <span style="color: #007b5e;">Risk</span> Assessment Online</h1>
         <p>Effortlessly understand the safety work with Focus AI powered.</p>
         <div class="mt-4">
-            <a href="#" class="btn btn-primary me-3">Start Your Free Analysis</a>
-            <a href="#" class="btn btn-outline-secondary">Shop Safety Devices</a>
+            <a href="{% url 'admin_login' %}" class="btn btn-primary me-3">Start Your Free Analysis</a>
+            <a href="{% url 'marine_home' %}" class="btn btn-outline-secondary">Shop Safety Devices</a>
         </div>
         <div class="trustpilot mt-4">
             <span class="rating">Excellent</span>
@@ -139,6 +147,65 @@
                         <h4>Find Safety Regulation </h4>
                         <p>Connect with latest regulation insights.</p>
                         <a href="#" class="text-success">CHAT WITH FOCUS AI →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="testimonial-section">
+        <h2>Our Users Love Us</h2>
+        <p>Discover how Docus has transformed the way people understand and manage their health.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <p>"As an athlete, maintaining optimal health is crucial. Docus has been a game-changer for me. Its AI Doctor is amazing, providing insights that help me fine-tune my training regimen and nutrition. I'm so thrilled to have found Docus."</p>
+                        <strong>- Eric S.</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <p>"Dealing with health anxiety, every new symptom used to send me down a rabbit hole of worry and speculation. Discovering Docus has been transformative for my mental and physical well-being. Docus AI Doctor provides clear, concise insights, guiding me on when to seek professional help."</p>
+                        <strong>- Alex T.</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <p>"Docus enabled me to conveniently secure a second opinion from a top US doctor, saving both time and travel expenses. I appreciate the seamless and hassle-free experience they provided, ensuring access to expert medical advice."</p>
+                        <strong>- Casey R.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="faq-section">
+        <h2>Have questions? Let's find answers</h2>
+        <div class="container">
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What is Docus?</button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Docus is an AI-powered health assistant.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">How can I get started with Docus and manage my health?</button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">You can start by signing up on the Docus platform and following the setup guide.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What kind of health issues can Docus help with?</button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Docus provides insights into a wide range of health concerns.</div>
                     </div>
                 </div>
             </div>

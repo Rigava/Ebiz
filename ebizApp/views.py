@@ -9,6 +9,8 @@ from django.db.models import Q
 # Create your views here.
 def demoPage(request):
     return render(request,"shop.html")
+def demoPage1(request):
+    return render(request,"profile_dashboard.html")
 
 def adminSignin(request):
     return render(request,"admin_templates/signin.html")
